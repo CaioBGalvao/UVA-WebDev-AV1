@@ -1,149 +1,203 @@
-body {
-    background-color: oklch(98.65% 0.013 82.4deg);
-}
+html,
+:host {
+  font-family:
+    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: 1.5;
+  font-weight: 400;
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    border-radius: 75px;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+  background-color: oklch(96% 0.015 82deg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-radius: 75px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }
 
 .header-left,
 .header-center,
 .header-right {
-    flex: 1;
+  flex: 1;
 }
 
 .header-center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .header-center nav {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 .header-center nav a {
-    color: oklch(32.11% 0 0deg);
-    font-weight: bold;
+  color: oklch(32.11% 0 0deg);
+  font-weight: bold;
 }
 
 .header-right {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header-right svg {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .hover-underline {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .hover-underline::after,
 .hover-underline::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, oklch(32.11% 0 0deg), oklch(98.65% 0.013 82.4deg));
-    bottom: -5px;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.4s ease-out;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    oklch(32.11% 0 0deg),
+    oklch(98.65% 0.013 82.4deg)
+  );
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
 }
 
 .hover-underline:hover::after,
 .hover-underline:hover::before {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /* Centraliza o conteúdo de main */
-.profileContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
-    gap: 1rem;
+.introContainer {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.intro-photo img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; /* Torna a imagem circular */
+}
+
+.intro-text {
+  flex: 1;
+  text-align: left;
 }
 
 /* Estilo para a seção de perfil */
 .profile img {
-    width: 150px;
-    /* Tamanho da imagem (ajuste conforme necessário) */
-    height: 150px;
-    object-fit: cover;
-    /* Garante que a imagem preencha o espaço definido */
-    border-radius: 50%;
-    /* Torna a imagem circular */
-    margin-bottom: 1rem;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
 /* Estilo para o nome */
 .profile h2 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
+
+.anime-section {
+  display: flex;
+  align-items: flex-start; /* ou center, se preferir centralizar verticalmente */
+  gap: 2rem; /* Espaço entre o SVG e o conteúdo */
+}
+
+.anime-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35rem; 
+}
+
+.anime-svg img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* Container dos botões sociais */
 .social-buttons {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 /* Estilo base para os botões */
 .social-buttons button {
-    border: none;
-    border-radius: 8px;
-    /* Bordas levemente arredondadas */
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  /* Bordas levemente arredondadas */
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* Botão GitHub: fundo branco, borda e texto pretos */
 .btn-github {
-    background-color: oklch(98.65% 0.013 82.4deg);
-    color: #000000;
+  background-color: oklch(98.65% 0.013 82.4deg);
+  color: #000000;
 }
 
 /* TODO: Arranjar uma cor melhor */
 .btn-github:hover {
-    background-color: black;
-    color: #000000;
+  background-color: black;
+  color: #000000;
 }
 
 /* Botão Linkedin: fundo na cor do Linkedin e texto branco */
 .btn-linkedin {
-    background-color: oklch(53.1% 0.13 243.655deg);
-    color: #ffffff;
+  background-color: oklch(53.1% 0.13 243.655deg);
+  color: #ffffff;
 }
 
 .btn-linkedin:hover {
-    background-color: oklch(43.6% 0.093 239.731deg);
-    color: #ffffff;
+  background-color: oklch(43.6% 0.093 239.731deg);
+  color: #ffffff;
 }
-

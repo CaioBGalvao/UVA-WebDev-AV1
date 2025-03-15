@@ -1,78 +1,263 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Caio Portifólio</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="script" href="index.js">
-</head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header-left">
-            <h1>&ltPortfólio do Caio/&gt</h1>
-        </div>
-        <div class="header-center">
-            <nav>
-                <a class="hover-underline" href="index.html">Home</a>
-                <a class="hover-underline" href="sobre/sobre.html">Sobre</a></li>
-                <a class="hover-underline" href="portfolio/portfolio.html">Portifólio</a>
-                <a class="hover-underline" href="novidades/novidades.html">Novidades</a>
-                <a class="hover-underline" href="contato/contato.html">Contato</a>
-            </nav>
-        </div>
-        <div class="header-right">
-            <a href="https://github.com/CaioBGalvao/UVA-WebDev-AV1" target="_blank">
-                <svg viewBox="0 0 128 128" width="30" height="30">
-                    <g fill="#181616">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z">
-                        </path>
-                        <path
-                            d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0">
-                        </path>
-                    </g>
-                </svg>
-            </a>
-        </div>
+      <div class="header-left">
+        <h1 id="potifolio-do-caio">&lt;Portfólio do Caio/&gt;</h1>
+      </div>
+      <div class="header-center">
+        <nav>
+          <a class="hover-underline" href="index.html">Home</a>
+          <a class="hover-underline" href="sobre/sobre.html">Sobre</a>
+          <a class="hover-underline" href="portfolio/portfolio.html"
+            >Portifólio</a
+          >
+          <a class="hover-underline" href="novidades/novidades.html"
+            >Novidades</a
+          >
+          <a class="hover-underline" href="contato/contato.html">Contato</a>
+        </nav>
+      </div>
+      <div class="header-right">
+        <a href="https://github.com/CaioBGalvao/UVA-WebDev-AV1" target="_blank">
+          <svg viewBox="0 0 128 128" width="30" height="30">
+            <g fill="#181616">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"
+              ></path>
+              <path
+                d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"
+              ></path>
+            </g>
+          </svg>
+        </a>
+      </div>
     </header>
-    <main class="profileContainer">
-        <section class="profile">
-            <!-- Imagem centralizada em forma de círculo -->
-            <img src="./placeholder.png" alt="Foto de Caio">
-
-            <!-- Nome centralizado -->
-            <h2>Caio Barbosa Galvão</h2>
-
-            <!-- Botões para GitHub e Linkedin -->
-            <div class="social-buttons">
-                <!-- Botão GitHub: background branco, bordas pretas e texto preto -->
-                <a href="https://github.com/CaioBGalvao" target="_blank">
-                    <button class="btn-github">
-                        <svg viewBox="0 0 128 128" width="24" height="24">
-                            <g fill="#181616">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z">
-                                </path>
-                                <path
-                                    d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0">
-                                </path>
-                            </g>
-                        </svg>
-                        GitHub
-                    </button>
-                </a>
-                <!-- Botão Linkedin: fundo na cor do Linkedin e letras brancas -->
-                <a href="https://www.linkedin.com/in/caiobgalvao/" target="_blank">
-                    <button class="btn-linkedin">
-                        Linkedin
-                    </button>
-                </a>
+    <main class="introContainer">
+      <section class="intro">
+        <div class="intro-photo">
+          <img src="https://github.com/CaioBGalvao.png" alt="Foto de Caio" />
+        </div>
+        <div class="intro-text">
+          <h2 id="oi-eu-sou-o-caio">Oi, eu sou o Caio</h2>
+          <p>
+            Seja bem-vindo ao meu portfólio! Aqui você encontrará um pouco da
+            minha história e experiências no universo da tecnologia.
+          </p>
+        </div>
+      </section>
+      <section class="blog">
+        <article>
+          <p>
+            Minha história no universo da tecnologia começou com diversos
+            cursinhos de informática que nem valem a pena citar, mas o ponto de
+            virada aconteceu no ensino médio.
+          </p>
+          <hr />
+          <h2 id="minhas-primeiras-experiências">
+            Minhas Primeiras Experiências
+          </h2>
+          <p>
+            Fiz o <strong>Técnico de Informática</strong> na
+            <a href="https://www.eterj.rj.gov.br/">ETERJ</a>, uma escola pequena
+            em Santíssimo, no Rio de Janeiro. Foi lá que tive meu primeiro
+            contato com a programação. Programei em VB, aprendi a soldar, a
+            criar placas de circuito impresso e outras habilidades.
+          </p>
+          <hr />
+          <h2 id="o-caminho-acadêmico">O Caminho Acadêmico</h2>
+          <p>
+            Sem ter clareza sobre minha paixão pela programação, optei por
+            cursar <strong>Administração</strong> na
+            <a href="https://www.estacio.br">Universidade Estácio de Sá</a>. A
+            escolha se deu pela crença de que gerenciar projetos e entender o
+            funcionamento das empresas eram áreas fascinantes. Essa bagagem foi
+            essencial para, futuramente, desenvolver uma feature que auxiliou os
+            administradores dos clientes na Tera Telemedicina.
+          </p>
+          <p>
+            Após quatro anos atuando na área administrativa, decidi mudar minha
+            carreira para a programação. Cursei um bootcamp na
+            <a href="https://betrybe.com/">Trybe</a>, onde adquiri sólidos
+            conhecimentos em desenvolvimento – e foi a partir daí que conquistei
+            meu emprego na Tera Telemedicina.
+          </p>
+          <p>
+            Para aprofundar ainda mais minha formação técnica, atualmente estou
+            cursando <strong>Ciência da Computação</strong> na
+            <a href="https://www.uva.br">Universidade Veiga de Almeida (UVA)</a
+            >, iniciado em 24 de fevereiro de 2025, com previsão de conclusão
+            para 2029. Essa jornada acadêmica promete consolidar meu
+            conhecimento e acelerar minha evolução como desenvolvedor.
+          </p>
+          <hr />
+          <h2 id="dos-cursinhos-à-programação-a-evolução-na-prática">
+            Dos Cursinhos à Programação: A Evolução na Prática
+          </h2>
+          <p>
+            Quando comecei a fazer cursinhos, aprendi noções básicas, como
+            <strong>usar um disquete</strong> (Jesus! O tempo passa!), limpar a
+            memória RAM, utilizar o Microsoft Word e navegar na internet. Em
+            seguida, fiz cursos de web design, onde aprendi a usar ferramentas
+            como Adobe Illustrator, Photoshop, Flash, Dreamweaver (quem ainda
+            usa isso?), CorelDraw, entre outras.
+          </p>
+          <p>
+            Posteriormente, cursei o Técnico de Informática, onde aprendi Visual
+            Basic, uso de IDEs, automação, soldagem, criação de placas de
+            circuito impresso e desenho para projetos.
+          </p>
+          <p>
+            Na faculdade de Administração, estudei disciplinas como
+            Contabilidade, Logística, Psicologia Organizacional, Gestão de
+            Pessoal e Direito Empresarial, entre outras.
+          </p>
+          <p>
+            Depois, ingressei no bootcamp da
+            <a href="https://betrybe.com/">Trybe</a>, onde aprofundei meus
+            conhecimentos em Shell, HTML5, CSS3, JavaScript ES6, React, Redux, o
+            antigo React Router DOM V5 (atualmente o TanStack Router), SQL com
+            MySQL, Sequelize, Node, REST API, TypeScript, MongoDB, Python, entre
+            outras tecnologias.
+          </p>
+          <p>
+            Foi a partir daí que consegui o emprego na Tera Telemedicina, mesmo
+            sem ter conhecimento prévio em PHP. Na Tera, aprendi PHP, Laravel,
+            PostgreSQL e outras tecnologias fundamentais para minha jornada como
+            desenvolvedor.
+          </p>
+          <hr />
+          <h2 id="além-do-código-vida-jogos-e-música">
+            Além do Código: Vida, Jogos e Música
+          </h2>
+          <p>
+            Acredito que o equilíbrio entre o universo profissional e os
+            interesses pessoais enriquece nossa criatividade e desempenho.
+            Quando não estou codificando, me dedico a:
+          </p>
+          <section class="anime-section">
+            <div class="anime-content">
+              <h3 id="animes">Animes</h3>
+              <ul>
+                <li><strong>Ao no Exorcist</strong></li>
+                <li><strong>Baka to Test to Shoukanjuu</strong></li>
+                <li><strong>Code Geass: Lelouch of the Rebellion</strong></li>
+                <li><strong>Dandadan</strong></li>
+                <li><strong>Death Note</strong></li>
+                <li><strong>Death Parade</strong></li>
+                <li><strong>Digimon Adventure</strong></li>
+                <li><strong>Fullmetal Alchemist: Brotherhood</strong></li>
+                <li><strong>Inu x Boku SS</strong></li>
+                <li><strong>Kore wa Zombie desu ka? of the Dead</strong></li>
+                <li><strong>Magi: The Kingdom of Magic</strong></li>
+                <li><strong>Mirai Nikki (TV)</strong></li>
+                <li><strong>Mob Psycho 100</strong></li>
+                <li><strong>Naruto</strong></li>
+                <li><strong>Noragami</strong></li>
+                <li><strong>One Punch Man</strong></li>
+                <li><strong>Psycho-Pass</strong></li>
+                <li><strong>Sakamichi no Apollon</strong></li>
+                <li><strong>Sen to Chihiro no Kamikakushi</strong></li>
+                <li><strong>Shigatsu wa Kimi no Uso</strong></li>
+                <li><strong>Shingeki no Kyojin</strong></li>
+                <li><strong>Steins;Gate</strong></li>
+                <li><strong>Sword Art Online</strong></li>
+                <li><strong>Yofukashi no Uta</strong></li>
+                <li>
+                  <strong
+                    >Zom 100: Zombie ni Naru made ni Shitai 100 no Koto</strong
+                  >
+                </li>
+                <li><strong>Jigokuraku</strong></li>
+              </ul>
             </div>
-        </section>
+            <div class="anime-svg">
+              <img src="./anime.svg" alt="Ícone de Animes" />
+            </div>
+          </section>
+          <section>
+            <h3 id="livros">Livros</h3>
+            <ul>
+              <li><strong>Silmarillion</strong></li>
+              <li><strong>Hobbit</strong></li>
+              <li><strong>Lord Of The Rings</strong></li>
+            </ul>
+          </section>
+          <section>
+            <h3 id="jogos">Jogos</h3>
+            <ul>
+              <li><strong>The Witcher 3</strong></li>
+              <li>
+                <strong>Assassin&#39;s Creed</strong> (<em
+                  >Black Flag, Unity, Origins</em
+                >)
+              </li>
+              <li><strong>StarCraft: Brood War</strong></li>
+              <li><strong>Captain Claw</strong></li>
+            </ul>
+          </section>
+          <section>
+            <h3 id="músicas">Músicas</h3>
+            <ul>
+              <li><strong>Linkin Park</strong></li>
+              <li><strong>ABBA</strong></li>
+              <li><strong>Elton John</strong></li>
+              <li><strong>Angra</strong></li>
+              <li><strong>Tim Maia</strong></li>
+              <li><strong>Ali</strong></li>
+              <li><strong>Creepy Nuts</strong></li>
+              <li><strong>Cascada</strong></li>
+              <li><strong>Clavis Profundis</strong></li>
+              <li><strong>Project Grissini</strong></li>
+            </ul>
+          </section>
+          <section>
+            <h3 id="lugares">Lugares</h3>
+            <p>
+              Tenho um carinho especial por <strong>Minas Gerais</strong>, com
+              sua culinária e paisagens encantadoras. Também já visitei
+              <strong>Espírito Santo</strong>, <strong>Pernambuco</strong>,
+              <strong>Santa Catarina</strong> e <strong>São Paulo</strong> –
+              onde eventos como o AWS Summit me impulsionam ainda mais
+              profissionalmente.
+            </p>
+          </section>
+          <hr />
+          <h2 id="palavras-que-guiam-minha-jornada">
+            Palavras que Guiam Minha Jornada
+          </h2>
+          <p>
+            Duas citações sempre me acompanham e reforçam meu compromisso com a
+            excelência no desenvolvimento:
+          </p>
+          <blockquote>
+            <p>
+              &quot;Quando estou programando, tento escrever o melhor código
+              possível porque é um pedaço de mim, minha alma, minha intenção de
+              resolver um problema que vai persistir por muito tempo. Se eu não
+              tiver as melhores intenções, o problema será mal resolvido por
+              muito tempo.&quot; —
+              <strong>Inspirado pelo CTO do Nubank, Vitor Olivier</strong>
+            </p>
+          </blockquote>
+          <blockquote>
+            <p>
+              &quot;Code is like humor. When you have to explain it, it’s
+              bad.&quot;<br />— <strong>Cory House</strong>
+            </p>
+          </blockquote>
+        </article>
+      </section>
     </main>
-</body>
-
+    <script type="module" src="index.js"></script>
+  </body>
 </html>
