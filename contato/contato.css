@@ -1,0 +1,41 @@
+/* Container dos botões sociais */
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Estilo base para os botões */
+  .social-buttons button {
+    border: none;
+    border-radius: 8px;
+    /* Bordas levemente arredondadas */
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* Botão GitHub: fundo branco, borda e texto pretos */
+  .btn-github {
+    background-color: oklch(98.65% 0.013 82.4deg);
+    color: #000000;
+  }
+  
+  /* TODO: Arranjar uma cor melhor */
+  .btn-github:hover {
+    background-color: black;
+    color: #000000;
+  }
+  
+  /* Botão Linkedin: fundo na cor do Linkedin e texto branco */
+  .btn-linkedin {
+    background-color: oklch(53.1% 0.13 243.655deg);
+    color: #ffffff;
+  }
+  
+  .btn-linkedin:hover {
+    background-color: oklch(43.6% 0.093 239.731deg);
+    color: #ffffff;
+  }
