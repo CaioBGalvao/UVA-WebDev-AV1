@@ -1,0 +1,13 @@
+
+.blog {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
