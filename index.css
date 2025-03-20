@@ -7,12 +7,17 @@
 
 .intro {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
+  padding: 15px;
   margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 25px;
 }
 
 .intro-photo img {
+  display: block;
   width: 150px;
   height: 150px;
   object-fit: cover;
@@ -24,36 +29,117 @@
   text-align: left;
 }
 
-/* Estilo para a seção de perfil */
-.profile img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1rem;
+#hobbys {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 25px;
 }
-
-/* Estilo para o nome */
-.profile h2 {
-  margin-bottom: 1rem;
-}
-
-.anime-section {
+.anime-content {
   display: flex;
-  align-items: flex-start; /* ou center, se preferir centralizar verticalmente */
-  gap: 2rem; /* Espaço entre o SVG e o conteúdo */
+  align-items: flex-start;
+  flex: 1;
 }
 
-.anime-svg {
+.title{
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.anime-content ul {
+  list-style: none;
+  padding: 0;
+}
+.anime-content li {
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.anime-content li.hovered {
+  background-color: #f0f0f0;
+  border-radius: 50px;
+}
+.anime-poster {
+  width: 35rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35rem;
+  transition: background-color 0.3s;
 }
 
-.anime-svg img {
+.anime-poster.hovered {
+  background-color: #f0f0f0;
+  border-radius: 50px;
+}
+.anime-poster img {
   max-width: 100%;
   height: auto;
 }
 
+#loadingIndicator {
+  position: absolute;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #333;
+  display: none;
+}
 
+.quote-section {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+  font-family: 'Georgia', serif;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quote-section .title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #222;
+}
+
+.quote-section .intro {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.quote-section blockquote {
+  border-left: 4px solid #ccc;
+  margin: 1.5rem auto;
+  padding-left: 1.5rem;
+  font-style: italic;
+  line-height: 1.6;
+  max-width: 800px;
+  position: relative;
+}
+
+.quote-section blockquote::before {
+  content: "“";
+  font-size: 4rem;
+  color: #ccc;
+  margin: 0.5rem;
+  position: absolute;
+  left: -0.8rem;
+  top: -1rem;
+}
+
+.quote-section blockquote p {
+  margin: 1rem;
+}
+
+.quote-section blockquote strong {
+  font-weight: bold;
+  color: #555;
+  display: block;
+  margin-top: 0.5rem;
+}
