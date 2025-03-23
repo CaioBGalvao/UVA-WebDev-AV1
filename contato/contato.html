@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caio Portifólio | Contato</title>
+  <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./contato.css" />
+  <link rel="prefetch" href="../novidades/novidades.html" as="document">
+</head>
+
+<body>
+  <style>
+    /*
+  1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+  2. Remove default margins and padding
+  3. Reset all borders.
+*/
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+      box-sizing: border-box;
+      /* 1 */
+      margin: 0;
+      /* 2 */
+      padding: 0;
+      /* 2 */
+      border: 0 solid;
+      /* 3 */
+    }
+
+    :root {
+      font-family:
+        ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      line-height: 1.5;
+      font-weight: 400;
+
+      background-color: oklch(96% 0.015 82deg);
+
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+      scroll-behavior: smooth;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background-color: #ccc;
+      margin: 1rem 0;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      border-radius: 75px;
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+    }
+
+    .header-left,
+    .header-center,
+    .header-right {
+      flex: 1;
+    }
+
+    .header-center {
+      display: flex;
+      justify-content: center;
+    }
+
+    .header-center nav {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header-center nav a {
+      color: oklch(32.11% 0 0deg);
+      font-weight: bold;
+    }
+
+    .header-right {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .header-right svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    .hover-underline {
+      position: relative;
+      display: inline-block;
+    }
+
+    .hover-underline::after,
+    .hover-underline::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right,
+          oklch(32.11% 0 0deg),
+          oklch(98.65% 0.013 82.4deg));
+      bottom: -5px;
+      left: 0;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.4s ease-out;
+    }
+
+    .hover-underline:hover::after,
+    .hover-underline:hover::before {
+      transform: scaleX(1);
+    }
+
+    footer {
+      padding: 0.5rem 1rem;
+      background-color: oklch(83.41% 0.048 80.75);
+      font-size: 0.875rem;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .footer-container a {
+      color: #000000;
+    }
+
+    .footer-share-icon {
+      height: 1em;
+      width: auto;
+    }
+  </style>
+  <header>
+    <div class="header-left">
+      <h1 id="potifolio-do-caio">&lt;Portfólio do Caio/&gt;</h1>
+    </div>
+    <div class="header-center">
+      <nav>
+        <a class="hover-underline" href="/index.html">Home</a>
+        <a class="hover-underline" href="/sobre/sobre.html">Sobre</a>
+        <a class="hover-underline" href="/portfolio/portfolio.html">Portifólio</a>
+        <a class="hover-underline" href="/novidades/novidades.html">Novidades</a>
+        <a class="hover-underline" href="/contato/contato.html">Contato</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a href="https://github.com/CaioBGalvao/UVA-WebDev-AV1" target="_blank">
+        <img src="../assets/github.svg" alt="Icone do GitHub" />
+      </a>
+    </div>
+  </header>
+
+  <main class="forms">
+    <h2>Contato</h2>
+    <div class="social-buttons">
+      <a href="https://github.com/CaioBGalvao" target="_blank">
+        <button type="button" class="github">GitHub</button>
+      </a>
+      <a href="https://linkedin.com/in/caiobgalvao" target="_blank">
+        <button type="button" class="linkedin">LinkedIn</button>
+      </a>
+    </div>
+
+    <!-- Formulário de contato -->
+    <form id="contactForm">
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" placeholder="ada@lovelance.com" required>
+      </div>
+      <div>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Div para mensagem de sucesso -->
+    <div id="message" class="success-message">
+      E-mail enviado com sucesso!
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <a href="https://www.flaticon.com/br/icones-gratis/desenvolvedor" title="desenvolvedor ícones" target="_blank">
+          Favicon criado por Karacis - Flaticon
+
+          <img src="../assets/share.svg" alt="Ícone de Share" class="footer-share-icon" />
+        </a>
+      </div>
+      <span>Site criado com amor por Caio</span>
+    </div>
+  </footer>
+  <script src="contato.js"></script>
+</body>
+
+</html>

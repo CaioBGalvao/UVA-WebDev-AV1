@@ -1,41 +1,103 @@
-/* Container dos botões sociais */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.forms {
+  margin: 50px auto;
+  padding: 6rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Botões Sociais */
 .social-buttons {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  /* Estilo base para os botões */
-  .social-buttons button {
-    border: none;
-    border-radius: 8px;
-    /* Bordas levemente arredondadas */
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  /* Botão GitHub: fundo branco, borda e texto pretos */
-  .btn-github {
-    background-color: oklch(98.65% 0.013 82.4deg);
-    color: #000000;
-  }
-  
-  /* TODO: Arranjar uma cor melhor */
-  .btn-github:hover {
-    background-color: black;
-    color: #000000;
-  }
-  
-  /* Botão Linkedin: fundo na cor do Linkedin e texto branco */
-  .btn-linkedin {
-    background-color: oklch(53.1% 0.13 243.655deg);
-    color: #ffffff;
-  }
-  
-  .btn-linkedin:hover {
-    background-color: oklch(43.6% 0.093 239.731deg);
-    color: #ffffff;
-  }
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-buttons a {
+  text-decoration: none;
+}
+
+.social-buttons button {
+  padding: 10px 20px;
+  border: none;
+
+  /* LinkedIn Blue */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.github {
+  background-color: #333;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 2rem;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Mensagem de sucesso */
+.success-message {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  display: none;
+}
