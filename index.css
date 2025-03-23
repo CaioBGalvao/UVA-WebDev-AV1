@@ -81,18 +81,6 @@
   height: auto;
 }
 
-#loadingIndicator {
-  position: absolute;
-  z-index: 10;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 2rem;
-  color: #333;
-  display: none;
-}
-
 .quote-section {
   background-color: #f9f9f9;
   padding: 2rem;
