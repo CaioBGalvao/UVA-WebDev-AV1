@@ -1,373 +1,359 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Caio Portifólio | Home</title>
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="prefetch" href="/novidades/novidades.html" as="document">
-  </head>
 
-  <body>
-    <style>
-      /*
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caio Portifólio | Home</title>
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="prefetch" href="/novidades/novidades.html" as="document">
+</head>
+
+<body>
+  <style>
+    /*
   1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
   2. Remove default margins and padding
   3. Reset all borders.
 */
-      *,
-      ::after,
-      ::before,
-      ::backdrop,
-      ::file-selector-button {
-        box-sizing: border-box; /* 1 */
-        margin: 0; /* 2 */
-        padding: 0; /* 2 */
-        border: 0 solid; /* 3 */
-      }
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+      box-sizing: border-box;
+      /* 1 */
+      margin: 0;
+      /* 2 */
+      padding: 0;
+      /* 2 */
+      border: 0 solid;
+      /* 3 */
+    }
 
-      :root {
-        font-family:
-          ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        line-height: 1.5;
-        font-weight: 400;
+    :root {
+      font-family:
+        ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      line-height: 1.5;
+      font-weight: 400;
 
-        font-synthesis: none;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
 
-        background-color: oklch(96% 0.015 82deg);
+      background-color: oklch(96% 0.015 82deg);
 
-        scroll-behavior: smooth;
-      }
+      scroll-behavior: smooth;
+    }
 
-      a {
-        text-decoration: none;
-      }
+    a {
+      text-decoration: none;
+    }
 
-      hr {
-        border: none;
-        height: 1px;
-        background-color: #ccc;
-        margin: 1rem 0;
-      }
+    hr {
+      border: none;
+      height: 1px;
+      background-color: #ccc;
+      margin: 1rem 0;
+    }
 
-      header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1rem 2rem;
-        border-radius: 75px;
-        background: rgba(255, 255, 255, 0.25);
-        box-shadow: 0 2px 32px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-      }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      border-radius: 75px;
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 2px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-      header h1 {
-        margin-top: 0.2em;
-        margin-bottom: 0.2em;
-      }
+    header h1 {
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+    }
 
-      .header-left,
-      .header-center,
-      .header-right {
-        flex: 1;
-      }
+    .header-left,
+    .header-center,
+    .header-right {
+      flex: 1;
+    }
 
-      .header-center {
-        display: flex;
-        justify-content: center;
-      }
+    .header-center {
+      display: flex;
+      justify-content: center;
+    }
 
-      .header-center nav {
-        list-style: none;
-        display: flex;
-        gap: 1rem;
-        margin: 0;
-        padding: 0;
-      }
+    .header-center nav {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
 
-      .header-center nav a {
-        color: oklch(32.11% 0 0deg);
-        font-weight: bold;
-      }
+    .header-center nav a {
+      color: oklch(32.11% 0 0deg);
+      font-weight: bold;
+    }
 
-      .header-right {
-        display: flex;
-        justify-content: flex-end;
-      }
+    .header-right {
+      display: flex;
+      justify-content: flex-end;
+    }
 
-      .header-right svg {
-        width: 30px;
-        height: 30px;
-      }
+    .header-right svg {
+      width: 30px;
+      height: 30px;
+    }
 
-      .hover-underline {
-        position: relative;
-        display: inline-block;
-      }
+    .hover-underline {
+      position: relative;
+      display: inline-block;
+    }
 
-      .hover-underline::after,
-      .hover-underline::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(
-          to right,
+    .hover-underline::after,
+    .hover-underline::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right,
           oklch(32.11% 0 0deg),
-          oklch(98.65% 0.013 82.4deg)
-        );
-        bottom: -5px;
-        left: 0;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 0.4s ease-out;
-      }
+          oklch(98.65% 0.013 82.4deg));
+      bottom: -5px;
+      left: 0;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.4s ease-out;
+    }
 
-      .hover-underline:hover::after,
-      .hover-underline:hover::before {
-        transform: scaleX(1);
-      }
+    .hover-underline:hover::after,
+    .hover-underline:hover::before {
+      transform: scaleX(1);
+    }
 
-      footer {
-        padding: 0.5rem 1rem;
-        background-color: oklch(83.41% 0.048 80.75);
-        font-size: 0.875rem;
-      }
+    footer {
+      padding: 0.5rem 1rem;
+      background-color: oklch(83.41% 0.048 80.75);
+      font-size: 0.875rem;
+    }
 
-      .footer-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1080px;
-        margin: 0 auto;
-      }
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
 
-      .footer-container a {
-        color: #000000;
-      }
+    .footer-container a {
+      color: #000000;
+    }
 
-      .footer-share-icon {
-        height: 1em;
-        width: auto;
-      }
+    .footer-share-icon {
+      height: 1em;
+      width: auto;
+    }
 
-      .scroll-top {
-        position: fixed;
-        right: 1rem;
-        bottom: 1rem;
-        padding: 0.75rem;
-        font-size: 1rem;
-        cursor: pointer;
-        z-index: 1000;
+    .scroll-top {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      padding: 0.75rem;
+      font-size: 1rem;
+      cursor: pointer;
+      z-index: 1000;
 
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-        padding: 1rem 2rem;
-        border-radius: 75px;
-        background: rgba(255, 255, 255, 0.25);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-      }
-    </style>
-    <header>
-      <div class="header-left">
-        <h1 id="potifolio-do-caio">&lt;Portfólio do Caio/&gt;</h1>
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      padding: 1rem 2rem;
+      border-radius: 75px;
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+    }
+  </style>
+  <header>
+    <div class="header-left">
+      <h1 id="potifolio-do-caio">&lt;Portfólio do Caio/&gt;</h1>
+    </div>
+    <div class="header-center">
+      <nav>
+        <a class="hover-underline" href="/index.html">Home</a>
+        <a class="hover-underline" href="/sobre/sobre.html">Sobre</a>
+        <a class="hover-underline" href="/portfolio/portfolio.html">Portifólio</a>
+        <a class="hover-underline" href="/novidades/novidades.html">Novidades</a>
+        <a class="hover-underline" href="/contato/contato.html">Contato</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a href="https://github.com/CaioBGalvao/UVA-WebDev-AV1" target="_blank">
+        <img src="assets/github.svg" alt="Icone do GitHub" />
+      </a>
+    </div>
+  </header>
+  <main class="introContainer">
+    <section class="intro">
+      <div class="intro-photo">
+        <img src="https://github.com/CaioBGalvao.png" alt="Foto de Caio" />
       </div>
-      <div class="header-center">
-        <nav>
-          <a class="hover-underline" href="/index.html">Home</a>
-          <a class="hover-underline" href="/sobre/sobre.html">Sobre</a>
-          <a class="hover-underline" href="/portfolio/portfolio.html"
-            >Portifólio</a
-          >
-          <a class="hover-underline" href="/novidades/novidades.html"
-            >Novidades</a
-          >
-          <a class="hover-underline" href="/contato/contato.html">Contato</a>
-        </nav>
+      <div class="intro-text">
+        <h2 id="oi-eu-sou-o-caio">Oi, eu sou o Caio</h2>
+        <p>
+          Seja bem-vindo ao meu portfólio! Aqui você encontrará um pouco da
+          minha história e experiências no universo da tecnologia.
+        </p>
       </div>
-      <div class="header-right">
-        <a href="https://github.com/CaioBGalvao/UVA-WebDev-AV1" target="_blank">
-          <img src="assets/github.svg" alt="Icone do GitHub" />
+    </section>
+    <section id="hobbys">
+      <h2 id="além-do-código-vida-jogos-e-música">
+        Além do Código: Vida, Jogos e Música
+      </h2>
+      <p>
+        Acredito que o equilíbrio entre o universo profissional e os
+        interesses pessoais enriquece nossa criatividade e desempenho. Quando
+        não estou codificando, me dedico a:
+      </p>
+
+      <section>
+        <h3 class="title">Animes</h3>
+        <div class="anime-content">
+          <ul id="animeList">
+            <li><strong>Ao no Exorcist</strong></li>
+            <li><strong>Code Geass: Lelouch of the Rebellion</strong></li>
+            <li><strong>Dandadan</strong></li>
+            <li><strong>Death Note</strong></li>
+            <li><strong>Fullmetal Alchemist: Brotherhood</strong></li>
+            <li><strong>Magi: The Kingdom of Magic</strong></li>
+            <li><strong>Mirai Nikki (TV)</strong></li>
+            <li><strong>Mob Psycho 100</strong></li>
+            <li><strong>Naruto</strong></li>
+            <li><strong>Noragami</strong></li>
+            <li><strong>One Punch Man</strong></li>
+            <li><strong>Psycho-Pass</strong></li>
+            <li><strong>Shingeki no Kyojin</strong></li>
+            <li><strong>Steins;Gate</strong></li>
+            <li><strong>Sword Art Online</strong></li>
+            <li><strong>Yofukashi no Uta</strong></li>
+            <li><strong>Jigokuraku</strong></li>
+          </ul>
+
+          <div class="anime-poster" id="animeImageContainer">
+            <img src="./assets/anime.png" alt="Passe o mouse sobre os títulos para ver o Poster" id="animeImage" />
+          </div>
+        </div>
+      </section>
+
+      <hr />
+      <section>
+        <h3 class="title">Livros</h3>
+        <ul>
+          <li><strong>Silmarillion</strong></li>
+          <li><strong>Hobbit</strong></li>
+          <li><strong>Lord Of The Rings</strong></li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h3 class="title">Jogos</h3>
+        <ul>
+          <li><strong>The Witcher 3</strong></li>
+          <li>
+            <strong>Assassin&#39;s Creed</strong> (<em>Black Flag, Unity, Origins</em>)
+          </li>
+          <li><strong>StarCraft: Brood War</strong></li>
+          <li><strong>Captain Claw</strong></li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h3 class="title">Músicas</h3>
+        <ul>
+          <li><strong>Linkin Park</strong></li>
+          <li><strong>ABBA</strong></li>
+          <li><strong>Elton John</strong></li>
+          <li><strong>Angra</strong></li>
+          <li><strong>Tim Maia</strong></li>
+          <li><strong>Ali</strong></li>
+          <li><strong>Creepy Nuts</strong></li>
+          <li><strong>Cascada</strong></li>
+          <li><strong>Clavis Profundis</strong></li>
+          <li><strong>Project Grissini</strong></li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h3 class="title">Lugares</h3>
+        <p>
+          Tenho um carinho especial por <strong>Minas Gerais</strong>, com sua
+          culinária e paisagens encantadoras. Também já visitei
+          <strong>Espírito Santo</strong>, <strong>Pernambuco</strong>,
+          <strong>Santa Catarina</strong> e <strong>São Paulo</strong> – onde
+          eventos como o AWS Summit me impulsionam ainda mais
+          profissionalmente.
+        </p>
+      </section>
+      <hr />
+      <section class="quote-section">
+        <h2 class="title">Palavras que Guiam Minha Jornada</h2>
+        <p class="intro">
+          Duas citações sempre me acompanham e reforçam meu compromisso com a
+          excelência no desenvolvimento:
+        </p>
+        <blockquote class="quote">
+          <p>
+            "Quando estou programando, tento escrever o melhor código possível
+            porque é um pedaço de mim, minha alma, minha intenção de resolver
+            um problema que vai persistir por muito tempo. Se eu não tiver as
+            melhores intenções, o problema será mal resolvido por muito
+            tempo."<br />
+            — <strong>Inspirado pelo CTO do Nubank, Vitor Olivier</strong>
+          </p>
+        </blockquote>
+        <blockquote class="quote">
+          <p>
+            "Code is like humor. When you have to explain it, it’s bad."<br />
+            — <strong>Cory House</strong>
+          </p>
+        </blockquote>
+      </section>
+    </section>
+  </main>
+  <button class="scroll-top" aria-label="Voltar ao topo">Topo</button>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <a href="https://www.flaticon.com/br/icones-gratis/desenvolvedor" title="desenvolvedor ícones" target="_blank">
+          Favicon criado por Karacis - Flaticon
+
+          <img src="./assets/share.svg" alt="Ícone de Share" class="footer-share-icon" />
         </a>
       </div>
-    </header>
-    <main class="introContainer">
-      <section class="intro">
-        <div class="intro-photo">
-          <img src="https://github.com/CaioBGalvao.png" alt="Foto de Caio" />
-        </div>
-        <div class="intro-text">
-          <h2 id="oi-eu-sou-o-caio">Oi, eu sou o Caio</h2>
-          <p>
-            Seja bem-vindo ao meu portfólio! Aqui você encontrará um pouco da
-            minha história e experiências no universo da tecnologia.
-          </p>
-        </div>
-      </section>
-      <section id="hobbys">
-        <h2 id="além-do-código-vida-jogos-e-música">
-          Além do Código: Vida, Jogos e Música
-        </h2>
-        <p>
-          Acredito que o equilíbrio entre o universo profissional e os
-          interesses pessoais enriquece nossa criatividade e desempenho. Quando
-          não estou codificando, me dedico a:
-        </p>
+      <span>Site criado com amor por Caio</span>
+    </div>
+  </footer>
+</body>
+<script src="./index.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const scrollTopBtn = document.querySelector(".scroll-top");
 
-        <section>
-          <h3 class="title">Animes</h3>
-          <div class="anime-content">
-            <ul id="animeList">
-              <li><strong>Ao no Exorcist</strong></li>
-              <li><strong>Code Geass: Lelouch of the Rebellion</strong></li>
-              <li><strong>Dandadan</strong></li>
-              <li><strong>Death Note</strong></li>
-              <li><strong>Fullmetal Alchemist: Brotherhood</strong></li>
-              <li><strong>Magi: The Kingdom of Magic</strong></li>
-              <li><strong>Mirai Nikki (TV)</strong></li>
-              <li><strong>Mob Psycho 100</strong></li>
-              <li><strong>Naruto</strong></li>
-              <li><strong>Noragami</strong></li>
-              <li><strong>One Punch Man</strong></li>
-              <li><strong>Psycho-Pass</strong></li>
-              <li><strong>Shingeki no Kyojin</strong></li>
-              <li><strong>Steins;Gate</strong></li>
-              <li><strong>Sword Art Online</strong></li>
-              <li><strong>Yofukashi no Uta</strong></li>
-              <li><strong>Jigokuraku</strong></li>
-            </ul>
-
-            <div class="anime-poster" id="animeImageContainer">
-              <img
-                src="./assets/anime.png"
-                alt="Passe o mouse sobre os títulos para ver o Poster"
-                id="animeImage"
-              />
-            </div>
-          </div>
-        </section>
-
-        <hr />
-        <section>
-          <h3 class="title">Livros</h3>
-          <ul>
-            <li><strong>Silmarillion</strong></li>
-            <li><strong>Hobbit</strong></li>
-            <li><strong>Lord Of The Rings</strong></li>
-          </ul>
-        </section>
-        <hr />
-        <section>
-          <h3 class="title">Jogos</h3>
-          <ul>
-            <li><strong>The Witcher 3</strong></li>
-            <li>
-              <strong>Assassin&#39;s Creed</strong> (<em
-                >Black Flag, Unity, Origins</em
-              >)
-            </li>
-            <li><strong>StarCraft: Brood War</strong></li>
-            <li><strong>Captain Claw</strong></li>
-          </ul>
-        </section>
-        <hr />
-        <section>
-          <h3 class="title">Músicas</h3>
-          <ul>
-            <li><strong>Linkin Park</strong></li>
-            <li><strong>ABBA</strong></li>
-            <li><strong>Elton John</strong></li>
-            <li><strong>Angra</strong></li>
-            <li><strong>Tim Maia</strong></li>
-            <li><strong>Ali</strong></li>
-            <li><strong>Creepy Nuts</strong></li>
-            <li><strong>Cascada</strong></li>
-            <li><strong>Clavis Profundis</strong></li>
-            <li><strong>Project Grissini</strong></li>
-          </ul>
-        </section>
-        <hr />
-        <section>
-          <h3 class="title">Lugares</h3>
-          <p>
-            Tenho um carinho especial por <strong>Minas Gerais</strong>, com sua
-            culinária e paisagens encantadoras. Também já visitei
-            <strong>Espírito Santo</strong>, <strong>Pernambuco</strong>,
-            <strong>Santa Catarina</strong> e <strong>São Paulo</strong> – onde
-            eventos como o AWS Summit me impulsionam ainda mais
-            profissionalmente.
-          </p>
-        </section>
-        <hr />
-        <section class="quote-section">
-          <h2 class="title">Palavras que Guiam Minha Jornada</h2>
-          <p class="intro">
-            Duas citações sempre me acompanham e reforçam meu compromisso com a
-            excelência no desenvolvimento:
-          </p>
-          <blockquote class="quote">
-            <p>
-              "Quando estou programando, tento escrever o melhor código possível
-              porque é um pedaço de mim, minha alma, minha intenção de resolver
-              um problema que vai persistir por muito tempo. Se eu não tiver as
-              melhores intenções, o problema será mal resolvido por muito
-              tempo."<br />
-              — <strong>Inspirado pelo CTO do Nubank, Vitor Olivier</strong>
-            </p>
-          </blockquote>
-          <blockquote class="quote">
-            <p>
-              "Code is like humor. When you have to explain it, it’s bad."<br />
-              — <strong>Cory House</strong>
-            </p>
-          </blockquote>
-        </section>
-      </section>
-    </main>
-    <button class="scroll-top" aria-label="Voltar ao topo">Topo</button>
-    <footer>
-      <div class="footer-container">
-        <div class="footer-left">
-          <a
-            href="https://www.flaticon.com/br/icones-gratis/desenvolvedor"
-            title="desenvolvedor ícones"
-            target="_blank"
-          >
-            Favicon criado por Karacis - Flaticon
-
-            <img
-              src="./assets/share.svg"
-              alt="Ícone de Share"
-              class="footer-share-icon"
-            />
-          </a>
-        </div>
-        <span>Site criado com amor por Caio</span>
-      </div>
-    </footer>
-  </body>
-  <script src="./index.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const scrollTopBtn = document.querySelector(".scroll-top");
-
-      scrollTopBtn.addEventListener("click", () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
       });
     });
-  </script>
+  });
+</script>
+
 </html>
